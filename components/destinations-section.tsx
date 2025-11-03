@@ -8,21 +8,21 @@ const destinations = [
     alternative: "Alternativa a Cancún",
     badge: "Caribe auténtico",
     description: "Calles de arena, snorkel en arrecifes vírgenes, cero resorts masivos",
-    imageQuery: "Mahahual pristine beach with palm trees Caribbean Mexico",
+    imageSrc: "/Mahahual.png",
   },
   {
     title: "Tarragona",
     alternative: "Alternativa a Barcelona",
     badge: "Historia viva",
     description: "Patrimonio romano intacto, ritmo local, gastronomía catalana auténtica",
-    imageQuery: "Tarragona Roman ruins Mediterranean sea Catalonia Spain",
+    imageSrc: "/Tarragona.png",
   },
   {
     title: "Estrasburgo",
     alternative: "Alternativa a París",
     badge: "Europa secreta",
     description: "Arquitectura entramada, mezcla cultural franco-alemana, sin colas",
-    imageQuery: "Strasbourg Petit France canals half-timbered houses",
+    imageSrc: "/Estrasburgo.png",
   },
 ]
 
@@ -42,7 +42,7 @@ export function DestinationsSection() {
         >
           Lugares fascinantes que no están en todas las guías turísticas
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
           {destinations.map((destination, index) => (
             <DestinationCard key={index} {...destination} />
           ))}
